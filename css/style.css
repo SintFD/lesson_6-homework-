@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/mont");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montez&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+input {
+  all: unset;
+}
+
+.content {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+}
+body {
+  /* display: flex; */
+  /* width: 1440px; */
+  /* margin: 0 auto; */
+}
+
+/* .container {
+  max-width: 1110px;
+  margin: 0 auto;
+} */
+
+.my-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.section-first > p {
+  margin-bottom: 20px;
+  color: rgb(51, 59, 105);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.card-first {
+  border-radius: 25px;
+  background: linear-gradient(
+    135.29deg,
+    rgb(45, 96, 255) 2.413%,
+    rgb(83, 155, 255) 101.106%
+  );
+  color: rgb(255, 255, 255);
+}
+
+.card-section-first,
+.card-section-second,
+.card-section-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-section-first {
+  padding: 24px 24px 0 24px;
+}
+
+.card-section-second {
+  padding: 0 97px 0 24px;
+}
+
+.card-section-third {
+  padding: 22px 24px 20px 24px;
+}
+
+.card-first .card-section-third {
+  border-radius: 0px 0px 25px 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0) 100%
+  );
+  color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.card-second {
+  border-radius: 25px;
+  background: linear-gradient(
+    135.29deg,
+    rgb(76, 73, 237) 2.413%,
+    rgb(10, 6, 244) 101.106%
+  );
+  color: rgb(255, 255, 255);
+}
+
+.card-second .card-section-third {
+  border-radius: 0px 0px 25px 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.card-third {
+  border: 1px solid rgb(223, 234, 242);
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+}
+
+.card-third .card-section-third {
+  border: 1px solid rgb(223, 234, 242);
+  border-radius: 0px 0px 25px 25px;
+
+  color: rgb(52, 60, 106);
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+header {
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: rgb(230, 239, 245);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 20px 40px;
+  align-items: center;
+}
+
+header > p {
+  color: rgb(52, 60, 106);
+  font-family: Mont;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.header-content {
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.sidebar {
+  /* width: 250px; */
+  /* height: 100vh; */
+  padding: 33px 19px 0 44px;
+  border: 0;
+  border-right: 1px;
+  border-color: rgb(230, 239, 245);
+  border-style: solid;
+}
+
+/* .main-content {
+  width: 1190px;
+} */
+
+.bank-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 62px;
+  color: rgb(52, 60, 106);
+  font-family: Mont;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.bank-name img {
+  width: 36px;
+}
+
+main {
+  background: rgb(245, 247, 250);
+  padding: 25px 40px 30px 40px;
+}
+
+header > div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.sidebar li {
+  display: flex;
+  gap: 27px;
+  margin-bottom: 39px;
+}
+
+.notification {
+  width: 50px;
+  height: 50px;
+  background: rgb(245, 247, 250);
+  border-radius: 30px;
+  background-image: url(../icons/002-notification-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.notification {
+  width: 50px;
+  height: 50px;
+  background: rgb(245, 247, 250);
+  border-radius: 25px;
+  background-image: url(../icons/002-notification-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.settings {
+  width: 50px;
+  height: 50px;
+  background: rgb(245, 247, 250);
+  background-image: url("../icons/settings 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+}
+
+.user-photo {
+  width: 60px;
+}
+
+.search-place {
+  border-radius: 40px;
+  background: rgb(245, 247, 250);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0 15px 25px;
+
+  color: rgb(139, 163, 203);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.card-container {
+  /* padding: 24px 24px 20px 24px; */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.section-second {
+  display: flex;
+  gap: 30px;
+}
+
+.statistic-section h2 {
+  color: rgb(51, 59, 105);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.section-first {
+  margin-bottom: 24px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+}
+
+.blue {
+  background: rgb(76, 120, 255);
+}
+
+.pink {
+  background: rgb(255, 130, 172);
+}
+
+.green {
+  background: rgb(22, 219, 204);
+}
+
+.orange {
+  background: rgb(255, 187, 56);
+}
+
+.statistic-section li {
+  display: flex;
+  gap: 12px;
+  color: rgb(113, 142, 191);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  /* margin-bottom: 16px; */
+  width: 101px;
+}
+
+.statistic-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* column-gap: 20px; */
+  row-gap: 15px;
+}
+
+.statistic-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 30px 50px 28px 50px;
+  gap: 16px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+}
+
+.statistic-section img {
+  width: 188px;
+}
+
+.cards-type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards-type-list li {
+  display: flex;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  padding: 15px 30px 15px 15px;
+  /* flex-basis: 100px; */
+}
+
+.cards-list h2 {
+  color: rgb(51, 59, 105);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.cards-type-list img {
+  margin-right: 15px;
+}
+
+.cards-type-list > li > div {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 38px;
+}
+
+.cards-type-list h3 {
+  color: rgb(35, 35, 35);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.cards-type-list p {
+  color: rgb(113, 142, 191);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.cards-type-list button {
+  all: unset;
+  color: rgb(24, 20, 243);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
