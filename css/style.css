@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/mont");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montez&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,8 @@ li {
 }
 
 input {
-  all: unset;
+  border: 0;
+  background-color: transparent;
 }
 
 .content {
@@ -21,16 +23,6 @@ input {
   width: 1440px;
   margin: 0 auto;
 }
-body {
-  /* display: flex; */
-  /* width: 1440px; */
-  /* margin: 0 auto; */
-}
-
-/* .container {
-  max-width: 1110px;
-  margin: 0 auto;
-} */
 
 .my-cards {
   display: flex;
@@ -151,24 +143,13 @@ header > p {
   line-height: 32px;
 }
 
-.header-content {
-  /* display: flex;
-  justify-content: space-between; */
-}
-
 .sidebar {
-  /* width: 250px; */
-  /* height: 100vh; */
   padding: 33px 19px 0 44px;
   border: 0;
   border-right: 1px;
   border-color: rgb(230, 239, 245);
   border-style: solid;
 }
-
-/* .main-content {
-  width: 1190px;
-} */
 
 .bank-name {
   display: flex;
@@ -201,6 +182,12 @@ header > div {
   display: flex;
   gap: 27px;
   margin-bottom: 39px;
+  align-items: center;
+  color: rgb(177, 177, 177);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .notification {
@@ -253,7 +240,6 @@ header > div {
 }
 
 .card-container {
-  /* padding: 24px 24px 20px 24px; */
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -263,6 +249,7 @@ header > div {
 .section-second {
   display: flex;
   gap: 30px;
+  margin-bottom: 24px;
 }
 
 .statistic-section h2 {
@@ -308,7 +295,6 @@ header > div {
   font-size: 15px;
   font-weight: 500;
   line-height: 18px;
-  /* margin-bottom: 16px; */
   width: 101px;
 }
 
@@ -316,7 +302,6 @@ header > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* column-gap: 20px; */
   row-gap: 15px;
 }
 
@@ -346,7 +331,6 @@ header > div {
   border-radius: 20px;
   background: rgb(255, 255, 255);
   padding: 15px 30px 15px 15px;
-  /* flex-basis: 100px; */
 }
 
 .cards-list h2 {
@@ -364,7 +348,6 @@ header > div {
 
 .cards-type-list > li > div {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 38px;
 }
@@ -392,4 +375,126 @@ header > div {
   font-size: 15px;
   font-weight: 500;
   line-height: 18px;
+}
+
+.sidebar li div {
+  display: none;
+  position: absolute;
+  left: -45px;
+}
+
+.sidebar li:hover {
+  position: relative;
+  color: rgb(24, 20, 243);
+  cursor: pointer;
+}
+
+.sidebar li:hover div {
+  display: block;
+}
+
+.section-third {
+  display: flex;
+  gap: 30px;
+}
+
+.add-card > div {
+  padding: 30px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+}
+
+.card-settings li {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-settings ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 50px 30px 30px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+}
+
+.section-third h3 {
+  color: rgb(51, 59, 105);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 21px;
+}
+
+.card-settings h4 {
+  color: rgb(35, 35, 35);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.card-settings p {
+  color: rgb(113, 142, 191);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.add-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.add-card > div > p {
+  margin-bottom: 29px;
+  color: rgb(113, 142, 191);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.add-card li p {
+  color: rgb(35, 35, 35);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.add-card li input {
+  padding: 16px 22px 16px 20px;
+  border: 1px solid rgb(223, 234, 242);
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  /* box-sizing: border-box; */
+  width: 320px;
+}
+
+.add-card li input::placeholder {
+  color: rgb(113, 142, 191);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.add-card button {
+  border-radius: 9px;
+  background: rgb(24, 20, 243);
+  padding: 15px 39px;
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
 }
